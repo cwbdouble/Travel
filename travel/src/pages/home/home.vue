@@ -1,13 +1,16 @@
 <template>
  <div>
-   <h1>hello world</h1>
-   <router-link to="/list">跳到list</router-link>
+   <home-header></home-header>
  </div>
 </template>
 
 <script>
+	import HomeHeader from './components/Header'
 	export default {
-		name: 'home'
+		name: 'home',
+		components:{
+			HomeHeader
+		}
 	}
 </script>
 
