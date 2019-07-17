@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="title">热销推荐</div>
-		<div class="recommond" v-for="(item,inex) of recommondList" :key="index">
+		<div class="recommond" v-for="(item,index) of list" :key="index">
 			<img class="recommond-img" :src="item.imgUrl"/>
 			<div class="recommond-text">
 				<p class="recommond-title">{{item.title}}</p>
@@ -19,24 +19,8 @@
 <script>
 	export default {
 		name: 'HomeRecommond',
-		data (){
-			return {
-				recommondList:[
-					{
-						id:'001',
-						imgUrl:'http://imgs.qunarzz.com/p/tts5/1808/81/915df9066af34302.jpg_r_480x320x90_c5c046f5.jpg',
-						title:'老虎海洋公园',
-						desc:'浓缩极地世界，展现海洋奇观'
-					},{
-						
-						id:'002',
-						imgUrl:'http://imgs.qunarzz.com/p/tts5/1808/81/915df9066af34302.jpg_r_480x320x90_c5c046f5.jpg',
-						title:'老虎海洋公园',
-						desc:'浓缩极地世界，展现海洋奇观'
-					}
-					
-				]
-			}
+		props:{
+			list:Array
 		}
 	}	
 </script>
