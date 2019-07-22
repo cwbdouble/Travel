@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<city-header></city-header>
+		<city-header :cities="cities"></city-header>
 		<city-list 
 			:hot="hotCities" 
 			:cities="cities"
