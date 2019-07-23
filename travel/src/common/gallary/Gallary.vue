@@ -7,8 +7,8 @@
 			    	<img class="swiper-img" :src="item" />
 			    </swiper-slide>
 
-			    <!-- <div class="swiper-pagination"  slot="pagination"></div>
-	 -->
+			    <div class="swiper-pagination pagin"  slot="pagination">111</div>
+	
 			  </swiper>
 		</div>
 		
@@ -24,6 +24,11 @@
 		data () {
 			return {
 				swiperOption:{
+					pagination: {
+						el:'.swiper-pagination'
+					},
+  					paginationType:'fraction',
+  					loop: true,
 					observeParents: true,
 					observer: true
 				}
@@ -41,6 +46,9 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
 	@import '~@style/mixins.styl'
+	.gallary >>> .swiper-container
+		overflow: inherit
+		z-index: 2
 	.gallary
 		z-index: 2
 		display: flex
@@ -52,10 +60,14 @@
 		left: 0
 		right: 0
 		bottom: 0
+		
 		.img_swiper
 			width: 100%
 			height: 0
 			padding-bottom: 100%
+			.pagin
+				color: white
+				width: 100%
 			.swiper-img
 				width:100%
 			
