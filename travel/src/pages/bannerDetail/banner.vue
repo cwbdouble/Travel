@@ -1,15 +1,18 @@
 <template>
 	<div>
 		<banner-header></banner-header>
+		<header-top></header-top>
 	</div>
 </template>
 
 <script>
 	import BannerHeader from './components/Header'
+	import HeaderTop from './components/HeaderTop'
 	export default {
 		name: 'BannerDetail',
 		components:{
-			BannerHeader
+			BannerHeader,
+			HeaderTop
 		}		
 	}	
 </script>

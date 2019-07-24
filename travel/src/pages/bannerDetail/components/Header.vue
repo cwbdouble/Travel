@@ -1,5 +1,6 @@
 <template>
 	<div>
+		
 		<div class="banner" @click="handlegallary">
 			<img class="bannerImg" src="https://img1.qunarzz.com/vs_ceph_vs_tts/27c4a25a-e677-4b08-b730-ed2882c6c0db.jpg_r_640x420x90_3714fe77.jpg"/>
 			<div class="bannerInfo">
