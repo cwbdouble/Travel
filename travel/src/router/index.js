@@ -21,5 +21,8 @@ export default new Router({
       name: 'banner',
       component: banner
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return {x:0,y:0}
+  }
 })

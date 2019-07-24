@@ -16,7 +16,7 @@
 	   		
 	   		
 		</div>
-		<div class="demo"></div>
+
 	</div>	
 </template>
 
@@ -97,8 +97,5 @@
 			text-align:center
 			color: #fff
 			border-radius: .1rem
-			font-size:.36rem
-	.demo
-		height: 18rem
-		width: 100%			
+			font-size:.36rem	
 </style>
